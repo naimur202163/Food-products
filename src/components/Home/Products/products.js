@@ -58,7 +58,7 @@ const products = () => {
             </Box>
             <Box sx={{ my: 2 }}>
                 <Container>
-                    <Card sx={{ maxWidth: "100%", height: '400px' }}>
+                    <Card data-aos="zoom-out-left" sx={{ maxWidth: "100%", height: '400px' }}>
                         <Grid container spacing={2}>
                             <Grid md={2}>
                                 <Box sx={{ ml: 2, mt: 2 }}>

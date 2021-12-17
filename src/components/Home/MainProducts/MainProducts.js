@@ -64,7 +64,7 @@ const MainProducts = () => {
 
                 <Container sx={{ my: 10, mt: 10 }}>
                     {
-                        mainProducts.map(product => <Card sx={{ maxWidth: '100%', height: 'auto', my: 10 }}>
+                        mainProducts.map(product => <Card data-aos="zoom-in-left" sx={{ maxWidth: '100%', height: 'auto', my: 10 }}>
                             <Grid container spacing={2}>
                                 <Grid md={2}>
                                     <Box sx={{ ml: 2, mt: 2 }}>

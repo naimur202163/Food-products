@@ -54,7 +54,7 @@ const MiddleBanner = () => {
                     <Grid sx={{ alignContent: 'center', justifyContent: 'center' }} container spacing={2}>
                         {
                             pizza?.map(product => <Grid md={3} xs={12}>
-                                <Card sx={{ maxWidth: '90%', my: 2, ml: 6 }}>
+                                <Card data-aos="zoom-in" sx={{ maxWidth: '90%', my: 2, ml: 6 }}>
                                     <CardMedia
                                         component="img"
                                         alt="green iguana"
