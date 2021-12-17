@@ -39,7 +39,7 @@ const MainProducts = () => {
                 <Typography>View Flow</Typography>
                 <Container sx={{ my: 10, mt: 10 }}>
                     {
-                        mainProducts.map(product => <Card sx={{ maxWidth: '100%', height: '400px' }}>
+                        mainProducts.map(product => <Card sx={{ maxWidth: '100%', height: 'auto', my: 10 }}>
                             <Grid container spacing={2}>
                                 <Grid md={2}>
                                     <Box sx={{ ml: 2, mt: 2 }}>
@@ -91,7 +91,7 @@ const MainProducts = () => {
                             {/* Gird-1 */}
                             <Grid sx={{ ml: 2, mt: 1 }} container spacing={2}>
                                 <Grid item md={2}>
-                                    <Typography variant="h6">Base Price :</Typography>
+                                    <Typography variant="h6">Regular Price :</Typography>
                                 </Grid>
                                 <Grid item md={2}>
                                     <Box style={{ display: 'flex' }}>
@@ -147,7 +147,7 @@ const MainProducts = () => {
                             </Grid>
                             <Grid sx={{ ml: 2, mt: 2 }} container spacing={2}>
                                 <Grid item md={2}>
-                                    <Typography variant="h6">Base Price :</Typography>
+                                    <Typography variant="h6"> Large :</Typography>
                                 </Grid>
                                 <Grid item md={2}>
                                     <Box style={{ display: 'flex' }}>
@@ -201,9 +201,150 @@ const MainProducts = () => {
 
                                 </Grid>
                             </Grid>
-                            {/* Gird-2 */}
-                                            
 
+                            {/* Gird-3 */}
+                            <Box sx={{ my: 5 }} style={{ display: 'flex' }}>
+                                <Typography variant="h6" sx={{ mt: 1, ml: 3 }}> Tooping : Min-1</Typography>
+                                <Button variant="outlined" sx={{ ml: 10 }}>Add On</Button>
+
+
+                            </Box>
+                            <Grid sx={{ ml: 2, mt: 1, }} container spacing={2}>
+                                <Grid item md={2}>
+                                    <Typography variant="h6">Chesse :</Typography>
+                                </Grid>
+                                <Grid item md={2}>
+                                    <Box style={{ display: 'flex' }}>
+                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <Button variant="outlined">Rs: {product.price1}</Button>
+
+
+                                    </Box>
+
+
+
+                                </Grid>
+                                <Grid item md={2}>
+                                    <Box style={{ display: 'flex' }}>
+                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <Button variant="outlined">Rs: {product.price5}</Button>
+
+
+                                    </Box>
+
+
+                                </Grid>
+                                <Grid item md={2}>
+                                    <Box style={{ display: 'flex' }}>
+                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <Button variant="outlined">Rs: {product.price1}</Button>
+
+
+                                    </Box>
+
+
+                                </Grid>
+                                <Grid item md={2}>
+                                    <Box style={{ display: 'flex' }}>
+                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <Button variant="outlined">Rs: {product.price2}</Button>
+
+
+                                    </Box>
+
+
+                                </Grid>
+                                <Grid item md={2}>
+                                    <Box style={{ display: 'flex' }}>
+                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <Button variant="outlined">Rs: {product.price1}</Button>
+
+
+                                    </Box>
+
+
+                                </Grid>
+                            </Grid>
+                            {/* Gird-4 */}
+
+                            <Grid sx={{ ml: 2, mt: 2, my: 3 }} container spacing={2}>
+                                <Grid item md={2}>
+                                    <Typography variant="h6">Onnion :</Typography>
+                                </Grid>
+                                <Grid item md={2}>
+                                    <Box style={{ display: 'flex' }}>
+                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <Button variant="outlined">Rs: {product.price3}</Button>
+
+
+                                    </Box>
+
+
+
+                                </Grid>
+                                <Grid item md={2}>
+                                    <Box style={{ display: 'flex' }}>
+                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <Button variant="outlined">Rs: {product.price2}</Button>
+
+
+                                    </Box>
+
+
+                                </Grid>
+                                <Grid item md={2}>
+                                    <Box style={{ display: 'flex' }}>
+                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <Button variant="outlined">Rs: {product.price3}</Button>
+
+
+                                    </Box>
+
+
+                                </Grid>
+                                <Grid item md={2}>
+                                    <Box style={{ display: 'flex' }}>
+                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <Button variant="outlined">Rs: {product.price4}</Button>
+
+
+                                    </Box>
+
+
+                                </Grid>
+                                <Grid item md={2}>
+                                    <Box style={{ display: 'flex' }}>
+                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <Button variant="outlined">Rs: {product.price5}</Button>
+
+
+                                    </Box>
+
+
+                                </Grid>
+                            </Grid>
+                            {/*Card Footer  */}
+                            <hr />
+
+                            <Box>
+                                <Typography sx={{ textAlign: 'center' }}>Show More</Typography>
+                            </Box>
+                            <Box>
+                                <Grid container spacing={2}>
+                                    <Grid md={4}>
+                                        <Box>
+                                            <Typography></Typography>
+                                        </Box>
+                                    </Grid>
+                                    <Grid md={4}>
+
+                                    </Grid>
+                                    <Grid md={4}>
+
+                                    </Grid>
+
+                                </Grid>
+                            </Box>
                         </Card>)
                     }
                 </Container>
