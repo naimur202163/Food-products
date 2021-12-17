@@ -5,6 +5,7 @@ import MainProducts from '../MainProducts/MainProducts';
 import MiddleBanner from '../PizzaBanner/MiddleBanner/MiddleBanner';
 import PizzaBanner from '../PizzaBanner/PizzaBanner';
 import Products from './../Products/Products';
+import PizzaBox from './../PizzaBox/PizzaBox';
 
 const Home = () => {
     return (
@@ -12,8 +13,11 @@ const Home = () => {
             <PizzaBanner />
             <Products />
             <MainProducts />
+            <PizzaBox />
             <MiddleBanner />
+
             <AppBanner />
+
         </div>
     );
 };

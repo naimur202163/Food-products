@@ -5,12 +5,12 @@ import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
 const AppBanner = () => {
     return (
-        <div className="bg" >
-            <Box>
+        <div sx={{ my: 10 }}  >
+            <Box className="bg">
                 <Grid container spacing={2}>
                     <Grid md={6} xs={12}>
                         <div>
-                            <img style={{ width: "100%" }} src="https://templates.envytheme.com/handout/default/assets/img/app-mobile.png" />
+                            <img style={{ height: '90%', width: "100%" }} src="https://templates.envytheme.com/handout/default/assets/img/app-mobile.png" />
                         </div>
                     </Grid>
                     <Grid md={6} xs={4}>
