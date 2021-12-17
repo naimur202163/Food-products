@@ -20,7 +20,7 @@ const foodItems = {
     price4: "50",
     price5: "30",
     price6: "33",
-    type: "fast food",
+    type: "Fast food",
     text: "Learning do amet contur dicivt suia non nuameius velit"
 };
 const products = () => {
@@ -84,7 +84,7 @@ const products = () => {
                     <Card sx={{ maxWidth: "100%", height: '300px' }}>
                         <Grid container spacing={2}>
                             <Grid md={2}>
-                                <Box sx={{ ml: 2 }}>
+                                <Box sx={{ ml: 2, mt: 2 }}>
                                     <img src={foodItems.img} alt="" />
                                 </Box>
                             </Grid>
@@ -94,11 +94,19 @@ const products = () => {
                             <Grid md={5}>
 
                                 <Grid container spacing={2}>
-                                    <Grid item md={6}>
-                                        <Typography sx={{ mt: 3 }}>Alios</Typography>
+                                    <Grid item md={4}>
+                                        <Typography sx={{ mt: 3 }}>{foodItems.type}</Typography>
                                     </Grid>
                                     <Grid md={6}>
-                                        <Typography sx={{ mt: 5 }}>Alios</Typography>
+                                        <TextField sx={{ mt: 5 }}
+                                            id="outlined-number"
+                                            label="Menu Item"
+                                            type="number"
+                                            palceholder="Menu Item"
+                                            InputLabelProps={{
+                                                shrink: true,
+                                            }}
+                                        />
 
                                     </Grid>
                                 </Grid>
