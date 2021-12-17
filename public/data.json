@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Quattro Stagioni",
+        "img": "https://templates.envytheme.com/handout/default/assets/img/pizza-shop/1.png",
+        "price1": "7",
+        "price": "27",
+        "price2": "30",
+        "price3": "21",
+        "price4": "50",
+        "price5": "30",
+        "price6": "33",
+        "type": "fast food",
+        "text": "Learning do amet contur dicivt suia non nuameius velit"
+    },
+    {
+        "id": 2,
+        "name": "Pizza Tartufata",
+        "img": "https://templates.envytheme.com/handout/default/assets/img/pizza-shop/3.png",
+        "price": "19",
+        "price1": "7",
+        "price2": "30",
+        "price3": "21",
+        "price4": "50",
+        "price5": "30",
+        "price6": "33",
+        "type": "fast food",
+        "text": "Learning do amet contur dicivt suia non nuameius velit"
+    },
+    {
+        "id": 3,
+        "name": "Boscaiola",
+        "img": "https://templates.envytheme.com/handout/default/assets/img/pizza-shop/8.png",
+        "price1": "7",
+        "price2": "30",
+        "price3": "21",
+        "price4": "50",
+        "price5": "30",
+        "price6": "33",
+        "price": "14",
+        "type": "fast food",
+        "text": "Learning do amet contur dicivt suia non nuameius velit"
+    }
+]
