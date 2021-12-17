@@ -7,7 +7,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea, CardActions } from '@mui/material';
-
+import Checkbox from '@mui/material/Checkbox';
+import LocalPizzaIcon from '@mui/icons-material/LocalPizza';
 // This is Fake Data
 const foodItems = {
     id: 1,
@@ -21,8 +22,10 @@ const foodItems = {
     price5: "30",
     price6: "33",
     type: "Fast food",
-    text: "Learning do amet contur dicivt suia non nuameius velit"
+    text: "Learning do amet contur dicivt suia non nuameius velit passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from "
 };
+const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+
 const products = () => {
 
     console.log(foodItems)
@@ -81,7 +84,7 @@ const products = () => {
             </Box>
             <Box sx={{ my: 2 }}>
                 <Container>
-                    <Card sx={{ maxWidth: "100%", height: '300px' }}>
+                    <Card sx={{ maxWidth: "100%", height: '400px' }}>
                         <Grid container spacing={2}>
                             <Grid md={2}>
                                 <Box sx={{ ml: 2, mt: 2 }}>
@@ -89,27 +92,101 @@ const products = () => {
                                 </Box>
                             </Grid>
                             <Grid md={5}>
-                                <Typography variant="h5" style={{ width: "100%" }} sx={{ mt: 3, ml: 10 }}>{foodItems.name}</Typography>
+                                <Typography variant="h4" style={{ width: "100%" }} sx={{ mt: 3, ml: 10 }}>{foodItems.name}</Typography>
+                                <Typography>
+                                    <TextField sx={{ mt: 3, ml: 10 }}
+                                        id="outlined-number"
+                                        label="Menu Catagory"
+                                        type="text"
+                                        palceholder="Menu Item"
+                                        InputLabelProps={{
+                                            shrink: true,
+                                        }}
+                                    />
+                                </Typography>
                             </Grid>
                             <Grid md={5}>
 
                                 <Grid container spacing={2}>
                                     <Grid item md={4}>
-                                        <Typography sx={{ mt: 3 }}>{foodItems.type}</Typography>
+                                        <Typography variant="h6" sx={{ mt: 3 }}>Pizza Hut</Typography>
                                     </Grid>
                                     <Grid md={6}>
                                         <TextField sx={{ mt: 5 }}
                                             id="outlined-number"
-                                            label="Menu Item"
-                                            type="number"
+                                            label="FOOD Menu"
+                                            type="text"
                                             palceholder="Menu Item"
                                             InputLabelProps={{
                                                 shrink: true,
                                             }}
+
                                         />
+                                        <br />
+                                        <Typography sx={{ mt: 2 }}>
+                                            {foodItems.text}
+                                        </Typography>
+                                        <br />
+                                        <Checkbox {...label} />
 
                                     </Grid>
                                 </Grid>
+                            </Grid>
+                        </Grid>
+                        <Grid sx={{ ml: 2, mt: 2 }} container spacing={2}>
+                            <Grid item md={2}>
+                                <Typography variant="h6">Base Price :</Typography>
+                            </Grid>
+                            <Grid item md={2}>
+                                <Box style={{ display: 'flex' }}>
+                                    <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                    <Button variant="outlined">Rs: {foodItems.price1}</Button>
+
+
+                                </Box>
+
+
+
+                            </Grid>
+                            <Grid item md={2}>
+                                <Box style={{ display: 'flex' }}>
+                                    <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                    <Button variant="outlined">Rs: {foodItems.price2}</Button>
+
+
+                                </Box>
+
+
+                            </Grid>
+                            <Grid item md={2}>
+                                <Box style={{ display: 'flex' }}>
+                                    <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                    <Button variant="outlined">Rs: {foodItems.price3}</Button>
+
+
+                                </Box>
+
+
+                            </Grid>
+                            <Grid item md={2}>
+                                <Box style={{ display: 'flex' }}>
+                                    <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                    <Button variant="outlined">Rs: {foodItems.price4}</Button>
+
+
+                                </Box>
+
+
+                            </Grid>
+                            <Grid item md={2}>
+                                <Box style={{ display: 'flex' }}>
+                                    <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                    <Button variant="outlined">Rs: {foodItems.price5}</Button>
+
+
+                                </Box>
+
+
                             </Grid>
                         </Grid>
                     </Card>
