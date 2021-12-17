@@ -36,7 +36,10 @@ const MainProducts = () => {
     return (
         <>
             <Box>
-                <Typography>View Flow</Typography>
+                <Container>
+                    <Typography variant='h6' sx={{ my: 2 }}>View Flow</Typography>
+                </Container>
+
                 <Container sx={{ my: 10, mt: 10 }}>
                     {
                         mainProducts.map(product => <Card sx={{ maxWidth: '100%', height: 'auto', my: 10 }}>
@@ -329,18 +332,53 @@ const MainProducts = () => {
                             <Box>
                                 <Typography sx={{ textAlign: 'center' }}>Show More</Typography>
                             </Box>
-                            <Box>
+                            <Box sx={{ my: 5 }}>
                                 <Grid container spacing={2}>
                                     <Grid md={4}>
+                                        {/* Check Box */}
                                         <Box>
-                                            <Typography></Typography>
+                                            <Typography sx={{ textAlign: "center", mb: 7 }}>Taxs</Typography>
+                                            <Grid container spacing={2}>
+                                                <Grid md={8}>
+                                                    <Typography sx={{ ml: 6 }}>Deffault Tax</Typography>
+                                                    <div style={{ display: 'flex' }}>
+                                                        <Checkbox sx={{ ml: 5 }} {...label} defaultChecked />
+                                                        <Typography sx={{ ml: 1, mt: 1 }}>CGST: 2.5%</Typography>
+                                                    </div>
+                                                    <div style={{ display: 'flex' }}>
+                                                        <Checkbox sx={{ ml: 5 }} {...label} defaultChecked />
+                                                        <Typography sx={{ ml: 1, mt: 1 }}>SGST: 3.5%</Typography>
+                                                    </div>
+
+
+                                                </Grid>
+                                                <Grid md={4}>
+                                                    <Typography sx={{ ml: 6 }}>Item Level</Typography>
+                                                    <div style={{ display: 'flex' }}>
+                                                        <Checkbox sx={{ ml: 1 }} {...label} defaultChecked />
+                                                        <Typography sx={{ ml: 1, mt: 1 }}>SGST: 3.5%</Typography>
+                                                    </div>
+                                                </Grid>
+                                            </Grid>
                                         </Box>
                                     </Grid>
                                     <Grid md={4}>
 
                                     </Grid>
                                     <Grid md={4}>
-
+                                        <div sx={{ mt: 4 }}>
+                                            <Button sx={{ my: 1, ml: 10,mt:2 }} variant="contained" color="success">
+                                                Recipe Setup
+                                            </Button>
+                                            <br />
+                                            <Button sx={{ my: 1, ml: 10 }} variant="contained" color="success">
+                                                Tex setup
+                                            </Button>
+                                            <br />
+                                            <Button sx={{ my: 1, ml: 10 }} variant="contained" color="success">
+                                                Inventory Setup
+                                            </Button>
+                                        </div>
                                     </Grid>
 
                                 </Grid>
