@@ -25,9 +25,12 @@ const Dreawer = () => {
                     sx={{ width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px` }}
                 >
                     <Toolbar>
-                        <Typography variant="h6" noWrap component="div">
-                            Permanent drawer
-                        </Typography>
+                        <div style={{ display: 'flex', }}>
+                            <Typography variant="h6" noWrap component="div">
+                                Handout
+                            </Typography>
+                        </div>
+
                     </Toolbar>
                 </AppBar>
                 <Drawer

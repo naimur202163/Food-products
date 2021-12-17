@@ -32,40 +32,11 @@ const products = () => {
     return (
         <div>
 
-            {/* <Box style={{ borderTop: '2px solid #000', borderBottom: '2px solid #000' }} sx={{ my: 1 }}>
-                <Box sx={{ my: 1 }}>
-                    <Box sx={{ flexGrow: 1, ml: 5, }}>
-                        <Grid container spacing={2}>
-                            <Grid item md={12}>
 
-                                <TextField
-                                    id="outlined-number"
-                                    label="Number"
-                                    type="number"
-                                    InputLabelProps={{
-                                        shrink: true,
-                                    }}
-                                />
-                                <TextField
-                                    id="outlined-number"
-                                    label="Number"
-                                    type="number"
-                                    InputLabelProps={{
-                                        shrink: true,
-                                    }}
-                                />
-                            </Grid>
-                        </Grid>
-
-                    </Box>
-
-                </Box>
-
-            </Box> */}
 
 
             {/* Food Button */}
-            <Container>
+            <Container sx={{ my: 10 }}>
                 <Box sx={{ mt: 3 }}>
 
                     <Grid container spacing={2}>
