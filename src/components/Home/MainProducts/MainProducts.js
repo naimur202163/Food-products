@@ -39,7 +39,7 @@ const MainProducts = () => {
                 <Typography>View Flow</Typography>
                 <Container sx={{ my: 10, mt: 10 }}>
                     {
-                        mainProducts.map(product => <Card sx={{ maxWidth: '100%' }}>
+                        mainProducts.map(product => <Card sx={{ maxWidth: '100%', height: '400px' }}>
                             <Grid container spacing={2}>
                                 <Grid md={2}>
                                     <Box sx={{ ml: 2, mt: 2 }}>
@@ -88,7 +88,8 @@ const MainProducts = () => {
                                     </Grid>
                                 </Grid>
                             </Grid>
-                            <Grid sx={{ ml: 2, mt: 2 }} container spacing={2}>
+                            {/* Gird-1 */}
+                            <Grid sx={{ ml: 2, mt: 1 }} container spacing={2}>
                                 <Grid item md={2}>
                                     <Typography variant="h6">Base Price :</Typography>
                                 </Grid>
@@ -96,6 +97,62 @@ const MainProducts = () => {
                                     <Box style={{ display: 'flex' }}>
                                         <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
                                         <Button variant="outlined">Rs: {product.price1}</Button>
+
+
+                                    </Box>
+
+
+
+                                </Grid>
+                                <Grid item md={2}>
+                                    <Box style={{ display: 'flex' }}>
+                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <Button variant="outlined">Rs: {product.price5}</Button>
+
+
+                                    </Box>
+
+
+                                </Grid>
+                                <Grid item md={2}>
+                                    <Box style={{ display: 'flex' }}>
+                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <Button variant="outlined">Rs: {product.price1}</Button>
+
+
+                                    </Box>
+
+
+                                </Grid>
+                                <Grid item md={2}>
+                                    <Box style={{ display: 'flex' }}>
+                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <Button variant="outlined">Rs: {product.price2}</Button>
+
+
+                                    </Box>
+
+
+                                </Grid>
+                                <Grid item md={2}>
+                                    <Box style={{ display: 'flex' }}>
+                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <Button variant="outlined">Rs: {product.price1}</Button>
+
+
+                                    </Box>
+
+
+                                </Grid>
+                            </Grid>
+                            <Grid sx={{ ml: 2, mt: 2 }} container spacing={2}>
+                                <Grid item md={2}>
+                                    <Typography variant="h6">Base Price :</Typography>
+                                </Grid>
+                                <Grid item md={2}>
+                                    <Box style={{ display: 'flex' }}>
+                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <Button variant="outlined">Rs: {product.price3}</Button>
 
 
                                     </Box>
@@ -144,6 +201,8 @@ const MainProducts = () => {
 
                                 </Grid>
                             </Grid>
+                            {/* Gird-2 */}
+                                            
 
                         </Card>)
                     }
