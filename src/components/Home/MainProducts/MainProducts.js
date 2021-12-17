@@ -9,8 +9,17 @@ import Grid from '@mui/material/Grid';
 import Checkbox from '@mui/material/Checkbox';
 import LocalPizzaIcon from '@mui/icons-material/LocalPizza';
 import { Button } from '@mui/material';
-
-
+import AddShoppingCartTwoToneIcon from '@mui/icons-material/AddShoppingCartTwoTone';
+import AddIcCallTwoToneIcon from '@mui/icons-material/AddIcCallTwoTone';
+import AirportShuttleTwoToneIcon from '@mui/icons-material/AirportShuttleTwoTone';
+import AirplanemodeActiveTwoToneIcon from '@mui/icons-material/AirplanemodeActiveTwoTone';
+import AodTwoToneIcon from '@mui/icons-material/AodTwoTone';
+import ArrowForwardIosTwoToneIcon from '@mui/icons-material/ArrowForwardIosTwoTone';
+import CabinTwoToneIcon from '@mui/icons-material/CabinTwoTone';
+import CameraswitchTwoToneIcon from '@mui/icons-material/CameraswitchTwoTone';
+import CelebrationTwoToneIcon from '@mui/icons-material/CelebrationTwoTone';
+import LocalDiningTwoToneIcon from '@mui/icons-material/LocalDiningTwoTone';
+import IcecreamTwoToneIcon from '@mui/icons-material/IcecreamTwoTone';
 const mainProducts = [
     {
         id: 2,
@@ -25,7 +34,20 @@ const mainProducts = [
         price6: "33",
         type: "fast food",
         text: "Learning do amet contur dicivt suia non nuameius velit"
-    },
+    }, {
+        id: 3,
+        name: "Boscaiola",
+        img: "https://templates.envytheme.com/handout/default/assets/img/pizza-shop/8.png",
+        price1: "7",
+        price2: "30",
+        price3: "21",
+        price4: "50",
+        price: "30",
+        price6: "33",
+        price: "14",
+        type: "fast food",
+        text: "Learning do amet contur dicivt suia non nuameius velit"
+    }
 
 ];
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
@@ -63,6 +85,7 @@ const MainProducts = () => {
                                         />
                                     </Typography>
                                 </Grid>
+
                                 <Grid md={5}>
 
                                     <Grid container spacing={2}>
@@ -109,7 +132,7 @@ const MainProducts = () => {
                                 </Grid>
                                 <Grid item md={2}>
                                     <Box style={{ display: 'flex' }}>
-                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <  AddShoppingCartTwoToneIcon sx={{ mt: 1, p: 1 }} />
                                         <Button variant="outlined">Rs: {product.price5}</Button>
 
 
@@ -119,7 +142,7 @@ const MainProducts = () => {
                                 </Grid>
                                 <Grid item md={2}>
                                     <Box style={{ display: 'flex' }}>
-                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <  AddIcCallTwoToneIcon sx={{ mt: 1, p: 1 }} />
                                         <Button variant="outlined">Rs: {product.price1}</Button>
 
 
@@ -129,7 +152,7 @@ const MainProducts = () => {
                                 </Grid>
                                 <Grid item md={2}>
                                     <Box style={{ display: 'flex' }}>
-                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <  AirportShuttleTwoToneIcon sx={{ mt: 1, p: 1 }} />
                                         <Button variant="outlined">Rs: {product.price2}</Button>
 
 
@@ -139,7 +162,7 @@ const MainProducts = () => {
                                 </Grid>
                                 <Grid item md={2}>
                                     <Box style={{ display: 'flex' }}>
-                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <  AirplanemodeActiveTwoToneIcon sx={{ mt: 1, p: 1 }} />
                                         <Button variant="outlined">Rs: {product.price1}</Button>
 
 
@@ -154,7 +177,7 @@ const MainProducts = () => {
                                 </Grid>
                                 <Grid item md={2}>
                                     <Box style={{ display: 'flex' }}>
-                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <  CabinTwoToneIcon sx={{ mt: 1, p: 1 }} />
                                         <Button variant="outlined">Rs: {product.price3}</Button>
 
 
@@ -185,7 +208,7 @@ const MainProducts = () => {
                                 </Grid>
                                 <Grid item md={2}>
                                     <Box style={{ display: 'flex' }}>
-                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <  ArrowForwardIosTwoToneIcon sx={{ mt: 1, p: 1 }} />
                                         <Button variant="outlined">Rs: {product.price4}</Button>
 
 
@@ -218,7 +241,7 @@ const MainProducts = () => {
                                 </Grid>
                                 <Grid item md={2}>
                                     <Box style={{ display: 'flex' }}>
-                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <  CameraswitchTwoToneIcon sx={{ mt: 1, p: 1 }} />
                                         <Button variant="outlined">Rs: {product.price1}</Button>
 
 
@@ -229,7 +252,7 @@ const MainProducts = () => {
                                 </Grid>
                                 <Grid item md={2}>
                                     <Box style={{ display: 'flex' }}>
-                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <  CelebrationTwoToneIcon sx={{ mt: 1, p: 1 }} />
                                         <Button variant="outlined">Rs: {product.price5}</Button>
 
 
@@ -249,7 +272,7 @@ const MainProducts = () => {
                                 </Grid>
                                 <Grid item md={2}>
                                     <Box style={{ display: 'flex' }}>
-                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <  LocalDiningTwoToneIcon sx={{ mt: 1, p: 1 }} />
                                         <Button variant="outlined">Rs: {product.price2}</Button>
 
 
@@ -259,7 +282,7 @@ const MainProducts = () => {
                                 </Grid>
                                 <Grid item md={2}>
                                     <Box style={{ display: 'flex' }}>
-                                        <  LocalPizzaIcon sx={{ mt: 1, p: 1 }} />
+                                        <  IcecreamTwoToneIcon sx={{ mt: 1, p: 1 }} />
                                         <Button variant="outlined">Rs: {product.price1}</Button>
 
 
@@ -367,7 +390,7 @@ const MainProducts = () => {
                                     </Grid>
                                     <Grid md={4}>
                                         <div sx={{ mt: 4 }}>
-                                            <Button sx={{ my: 1, ml: 10,mt:2 }} variant="contained" color="success">
+                                            <Button sx={{ my: 1, ml: 10, mt: 2 }} variant="contained" color="success">
                                                 Recipe Setup
                                             </Button>
                                             <br />

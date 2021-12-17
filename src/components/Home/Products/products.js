@@ -80,7 +80,10 @@ const products = () => {
 
             {/* Food items  || Card Items*/}
             <Box>
-                <Typography sx={{ ml: 2 }} sx={{ mt: 2 }} variant="h5">Our Products</Typography>
+                <Container>
+                    <Typography sx={{ ml: 2 }} sx={{ mt: 2 }} variant="h5">Our Products</Typography>
+                </Container>
+
             </Box>
             <Box sx={{ my: 2 }}>
                 <Container>
